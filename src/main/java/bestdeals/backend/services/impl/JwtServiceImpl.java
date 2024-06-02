@@ -18,8 +18,8 @@ import io.jsonwebtoken.security.Keys;
 @Service
 public class JwtServiceImpl implements JwtService {
 	
-	private static final String SECRET_KEY = "ABC5274262424F35236246249723529624972395622AAA8363B";
-	private static final long EXPIRATION_TIME = 1000L * 60 * 60 * 24 * 365; // 24 hours
+	private static final String SECRET_KEY = "************";
+	private static final long EXPIRATION_TIME = 1000L * 60 * 60 * 24; // 24 hours
 	
 	public String generateToken(UserDetails userDetails) {
 		return Jwts.builder()

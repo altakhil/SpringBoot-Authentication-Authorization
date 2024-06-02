@@ -30,9 +30,9 @@ public class BackendApplication implements CommandLineRunner {
 			User user = new User();
 
 			user.setEmail("admin@gmail.com");
-			user.setName("Akhil");
+			user.setName("********");
 			user.setRoles(List.of(Role.ADMIN));
-			user.setPassword(new BCryptPasswordEncoder().encode("Apple&1234"));
+			user.setPassword(new BCryptPasswordEncoder().encode("*********"));
 			userRepository.save(user);
 		}
 	}
